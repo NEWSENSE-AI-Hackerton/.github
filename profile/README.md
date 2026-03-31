@@ -1,4 +1,5 @@
-# My Life News — AI News, Real Action
+#![슬라이드1](https://github.com/user-attachments/assets/f8fdba01-27e9-4925-a84d-9772ea53f984)
+ My Life News — AI News, Real Action
 
 > **세상 뉴스가 아닌, 내 인생 뉴스**  
 > 매경미디어 × Anthropic 해커톤 | Team NEWSENSE | 2026.03.20
