@@ -1,4 +1,4 @@
-# 📊 My Life News — AI News, Real Action
+# My Life News — AI News, Real Action
 
 > **세상 뉴스가 아닌, 내 인생 뉴스**  
 > 매경미디어 × Anthropic 해커톤 | Team NEWSENSE | 2026.03.20
