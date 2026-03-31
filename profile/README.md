@@ -1,232 +1,33 @@
 # 수정중
 ![슬라이드1](https://github.com/user-attachments/assets/f8fdba01-27e9-4925-a84d-9772ea53f984)
-# My Life News — AI News, Real Action
-
-> **세상 뉴스가 아닌, 내 인생 뉴스**  
-> 매경미디어 × Anthropic 해커톤 | Team NEWSENSE | 2026.03.20
-
----
-
-## 👥 Team NEWSENSE
-
-| 역할 | 이름 | 담당 |
-|------|------|------|
-| PM / 기획 | 이연주 | Claude 프롬프트 엔지니어링, 서비스 기획 총괄, 발표 자료 제작, 피칭 |
-| Frontend Dev | 곽예경 | React 기반 UI/UX 구현, 인터랙티브 대시보드 |
-| Backend Dev | 최준식 | FastAPI 서버 구축, Claude API 파이프라인 연동 |
-
 ![슬라이드23](https://github.com/user-attachments/assets/9586e730-e9e4-4a7e-978a-ff69eb239b69)
+![슬라이드3](https://github.com/user-attachments/assets/7c18bae5-c81a-4b4b-a330-def4ae2cbb89)
+![슬라이드4](https://github.com/user-attachments/assets/f8bd6cc4-7dea-46a3-8570-7a087f2ef98b)
+![슬라이드6](https://github.com/user-attachments/assets/5c9c906f-471a-4950-a6c7-487d71385ef4)
+![슬라이드7](https://github.com/user-attachments/assets/cdd2db3d-6fd7-4f7b-b722-1f337f60de27)
 
----
+# 데모 영상
 
-## 🎯 프로젝트 개요
 
-**My Life News**는 AI가 경제 뉴스를 분석해 사용자 개인의 재정 상황에 맞춘 영향도와 구체적 행동을 제안하는 **개인 인생 대시보드**입니다.
+https://github.com/user-attachments/assets/1eadb0e3-c255-49f3-86d4-0bcb431c78ef
 
-기존 뉴스 앱이 "세상에서 일어난 일"을 전달하는 데 그쳤다면,  
-My Life News는 **"내 인생에 얼마나 영향을 주는가"**와 **"지금 당장 뭐 해야 하는가"**를 알려줍니다.
 
-```
-기존 뉴스 앱:  뉴스 → 정보 → 이해
-My Life News:  뉴스 → 나에게 얼마나 영향? → 지금 뭐 해야 함?
-```
 
----
+![슬라이드9](https://github.com/user-attachments/assets/072e2670-b3ed-4644-bd3d-c02c3bc9dfee)
+![슬라이드10](https://github.com/user-attachments/assets/78a7bab8-5c97-4d6b-92dd-576266ee516a)
+![슬라이드11](https://github.com/user-attachments/assets/d55786f8-f7b8-4024-b70c-b77a7f85617e)
+![슬라이드12](https://github.com/user-attachments/assets/90361c28-e5b5-4ceb-95c5-4020c88a44b0)
+![슬라이드13](https://github.com/user-attachments/assets/cfeed95f-003e-4e5b-a32c-396345899739)
+![슬라이드14](https://github.com/user-attachments/assets/5b9bd00e-5807-409f-aadc-4bb364d335b3)
+![슬라이드15](https://github.com/user-attachments/assets/c2ee49ff-4f25-44c9-88d6-97b21bf55449)
+![슬라이드16](https://github.com/user-attachments/assets/48d1857c-3a97-4582-8d48-eae4391550b2)
+![슬라이드17](https://github.com/user-attachments/assets/6f922d1b-57ff-4ab9-8cb9-9b2714a74961)
+![슬라이드21](https://github.com/user-attachments/assets/bf170c2b-5629-49cf-bee4-c5e343f90363)
+![슬라이드22](https://github.com/user-attachments/assets/c015dfae-bf1a-4bbf-b9c3-b7241c41fbe4)
+![슬라이드23](https://github.com/user-attachments/assets/ead29f20-1206-4373-b06b-90f98d93c78b)
+![슬라이드24](https://github.com/user-attachments/assets/c4997321-3e3c-455e-8871-cf733170f6de)
 
-## 🔍 문제 정의
 
-- 한국언론진흥재단 조사: **20대의 70% 이상**이 정기적으로 뉴스를 읽지 않음
-- 포털 뉴스 이용률: 20대 9.4%p↓, 30대 10.5%p↓ (2023→2024)
-- 근본 원인: **"나랑 상관없는 이야기 같아서"**
-
-> 뉴스가 싫은 게 아니라, 나와 무관한 정보의 홍수가 싫은 것
-
-**실질적 손해 예시**
-- 금리 변화를 몰라 대출 이자 폭탄
-- 받을 수 있는 정책 혜택 500만원 놓침
-- 잘못된 투자 타이밍으로 손실
-
----
-
-## 💡 솔루션: 인생 대시보드 4대 항목
-
-| 항목 | 내용 |
-|------|------|
-| 💰 **자산 영향** | 내 돈이 얼마나 늘거나 줄어드는가? |
-| 🏠 **주거 안정성** | 내 집, 전세에 무슨 일이 생기는가? |
-| 🎁 **정책 혜택** | 내가 받을 수 있는 지원금이 있는가? |
-| ⚠️ **리스크** | 내 직장, 투자, 안전에 위협이 되는가? |
-
----
-
-## 🏗️ 시스템 아키텍처
-
-```
-매경 뉴스 실시간 API
-        │
-        ▼
-뉴스 수집 & 전처리 (카테고리 분류, 필터링)
-        │
-        ▼
-Claude 1차: 이슈 추출 — "이게 사람 인생에 영향?"
-        │
-        ▼
-사용자 프로필 매칭 (나이, 소득, 대출, 자산)
-        │
-        ▼
-Claude 2차: 영향도 계산 — "이 사람에게 얼마 영향?"
-        │
-        ▼
-Claude 3차: 행동 추천 — "지금 뭐 하면 됨?"
-        │
-        ▼
-인생 대시보드 업데이트 + 푸시 알림 발송
-```
-
----
-
-## 🤖 Claude API 3단계 파이프라인
-
-### Step 1 — 이슈 추출 (Issue Extraction)
-
-뉴스 원문에서 개인의 재정·주거·직업·안전에 영향을 주는 이슈만 필터링합니다.
-
-```python
-# 출력 예시
-{
-  "issue_type": "금리 변동",
-  "key_event": "기준금리 3.5% 동결 (변동 없음)",
-  "impact_category": ["자산"],
-  "severity": 6,
-  "time_sensitivity": "즉시"
-}
-```
-
-### Step 2 — 영향도 계산 (Impact Calculation)
-
-사용자 프로필과 이슈를 결합해 구체적인 금액을 산출합니다.
-
-```python
-# 출력 예시 (28세, 전세 2억 대출)
-{
-  "asset_impact": {
-    "loan_interest_change": -180000,   # 월 단위
-    "savings_interest_change": +40000,
-    "total_monthly": +220000,
-    "total_yearly": +2640000
-  },
-  "housing_stability": "안정",
-  "risk_level": "낮음",
-  "impact_score": 7
-}
-```
-
-### Step 3 — 행동 추천 (Action Recommendation)
-
-시급성·난이도·예상 효과 기준으로 실행 가능한 행동을 최대 3개 제안합니다.
-
-```
-🎯 추천 행동 #1 (우선순위: 높음)
-💡 대출 갈아타기 검토
-  어떻게? 토스/카카오뱅크 앱에서 '전세대출 갈아타기' 검색 후 금리 비교
-  예상 효과: 연 96만원 절감
-
-🎯 추천 행동 #2 (우선순위: 중간)
-💡 청년 전세대출 금리 지원 정책 신청
-  마감: 3월 31일 | 예상 효과: 연 192만원 절감
-```
-
----
-
-## 🛠️ 기술 스택
-
-| 영역 | 기술 |
-|------|------|
-| **Frontend** | React + TypeScript |
-| **Backend** | FastAPI (Python) |
-| **Database** | PostgreSQL |
-| **AI** | Claude Sonnet (3단계 추론 체인) |
-| **뉴스 데이터** | 매경 뉴스 실시간 API / 크롤링 |
-| **임베딩** | 경량 분류 모델 (뉴스 카테고리 필터) |
-
----
-
-## 📱 주요 화면
-
-| 화면 | 설명 |
-|------|------|
-| **인생 대시보드** | 이번 주 총합 영향, 4대 항목 카드, 추천 행동 리스트 |
-| **뉴스 피드** | 나에게 영향을 준 뉴스만 필터링 |
-| **할 일** | 행동 카드 → 캘린더 TODO 자동 등록, D-Day 알림 |
-| **실시간 알림** | 뉴스 발생 즉시 개인화 푸시 알림 |
-| **Claude AI 상담** | 맥락 유지 + 정량적 시뮬레이션 + Action 연결 |
-
----
-
-## 🗂️ 프로젝트 구조
-
-```
-my-life-news/
-├── frontend/                # React + TypeScript
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Dashboard/   # 인생 대시보드 (홈)
-│   │   │   ├── News/        # 뉴스 피드
-│   │   │   ├── Todo/        # 할 일 / 행동 카드
-│   │   │   └── Chat/        # Claude AI 상담
-│   │   └── components/
-├── backend/                 # FastAPI
-│   ├── api/
-│   ├── services/
-│   │   ├── news_crawler.py       # 매경 뉴스 수집
-│   │   ├── stage1_extraction.py  # Claude 1차: 이슈 추출
-│   │   ├── stage2_calculation.py # Claude 2차: 영향도 계산
-│   │   └── stage3_recommendation.py # Claude 3차: 행동 추천
-│   └── models/
-└── README.md
-```
-
----
-
-## 🎬 데모 시나리오
-
-**"28세 직장인 김민수의 하루"**
-
-| 시간 | 이벤트 | 결과 |
-|------|--------|------|
-| 오전 9시 | 한국은행 기준금리 동결 뉴스 발생 | 푸시 알림: "이번 달 +₩220,000 절감 예상" |
-| 오전 9시 | 앱 진입 → 대시보드 확인 | 대출 갈아타기 추천 카드 노출 |
-| 오후 2시 | 청년 전세대출 금리 지원 정책 발표 | 긴급 알림: "연 192만원 절감 가능, D-13" |
-| 저녁 8시 | AI 상담 | "3년 내 1억 목표 달성 전략 시뮬레이션" |
-
----
-
-## 📈 기대 효과
-
-- **타겟**: 뉴스 비소비 2030세대 약 600만 명
-- **1인당 연평균 기대 혜택**: 약 200만원
-  - 대출 최적화: 100만원
-  - 정책 혜택 누락 방지: 50만원
-  - 투자 손실 감소: 50만원
-- **전체 잠재 효과**: 연 **12조원** 국민 재정 손실 방지
-
----
-
-## 💼 비즈니스 모델
-
-| 수익원 | 내용 |
-|--------|------|
-| **프리미엄 구독** | 월 9,900원 — 무제한 AI 상담, 장기 시뮬레이션 |
-| **제휴 수수료** | 금융상품 추천 시 파트너사 수수료 |
-| **B2B 라이선스** | 기업 복지 툴, 금융사 고객 상담 보조 시스템 |
-
----
-
-## 📄 라이선스
-
-This project was built during the **매경미디어 × Anthropic 'News to Action' AI 해커톤** (2026.03.20).
-
----
 
 <p align="center">
   <b>세상 뉴스가 아닌, 내 인생 뉴스</b><br/>
