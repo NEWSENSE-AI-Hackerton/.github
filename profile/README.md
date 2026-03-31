@@ -6,7 +6,7 @@
 ![슬라이드7](https://github.com/user-attachments/assets/cdd2db3d-6fd7-4f7b-b722-1f337f60de27)
 
 # 데모 영상 & 배포 링크
-[My_Life_News](https://frontend-dev-ec79.up.railway.app/news)
+Link: [My_Life_News](https://frontend-dev-ec79.up.railway.app/news)
 
 
 https://github.com/user-attachments/assets/1eadb0e3-c255-49f3-86d4-0bcb431c78ef
