@@ -1,4 +1,3 @@
-# 수정중
 ![슬라이드1](https://github.com/user-attachments/assets/f8fdba01-27e9-4925-a84d-9772ea53f984)
 ![슬라이드23](https://github.com/user-attachments/assets/9586e730-e9e4-4a7e-978a-ff69eb239b69)
 ![슬라이드3](https://github.com/user-attachments/assets/7c18bae5-c81a-4b4b-a330-def4ae2cbb89)
