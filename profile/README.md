@@ -1,5 +1,5 @@
 ![슬라이드1](https://github.com/user-attachments/assets/f8fdba01-27e9-4925-a84d-9772ea53f984)
-![슬라이드23](https://github.com/user-attachments/assets/9586e730-e9e4-4a7e-978a-ff69eb239b69)
+![슬라이드23](https://github.com/user-attachments/assets/5c2fa9ce-aeaf-4b7f-9b52-947f11e99369)
 ![슬라이드3](https://github.com/user-attachments/assets/7c18bae5-c81a-4b4b-a330-def4ae2cbb89)
 ![슬라이드4](https://github.com/user-attachments/assets/f8bd6cc4-7dea-46a3-8570-7a087f2ef98b)
 ![슬라이드6](https://github.com/user-attachments/assets/5c9c906f-471a-4950-a6c7-487d71385ef4)
