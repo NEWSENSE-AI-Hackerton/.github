@@ -13,6 +13,7 @@
 | PM / 기획 | 이연주 | Claude 프롬프트 엔지니어링, 서비스 기획 총괄, 발표 자료 제작, 피칭 |
 | Frontend Dev | 곽예경 | React 기반 UI/UX 구현, 인터랙티브 대시보드 |
 | Backend Dev | 최준식 | FastAPI 서버 구축, Claude API 파이프라인 연동 |
+![슬라이드23](https://github.com/user-attachments/assets/d9d82638-b9b4-4b03-8b72-3f7c458f6c28)
 
 ---
 
