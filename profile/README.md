@@ -4,6 +4,7 @@
 - 배포 링크(Link): [My_Life_News](https://frontend-dev-ec79.up.railway.app/news)
 - 서비스 개발 기간: 2026.01.14 - 2026.03.20
 - 주최: 매경미디어 x Anthropic 공동 주최
+- 주제: 'News to Action' AI 해커톤
 - 성과: 본선 진출 및 수료증 발급 (400대 37 경쟁률)
 
 ![슬라이드1](https://github.com/user-attachments/assets/f8fdba01-27e9-4925-a84d-9772ea53f984)
