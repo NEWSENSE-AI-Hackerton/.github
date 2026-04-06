@@ -1,3 +1,11 @@
+# 내 인생 뉴스(My Life News)
+- 한줄 소개: 세상 뉴스가 아니라 내 인생 뉴스 - AI 기반 개인 인생 대시보드
+- 서비스명: 내 인생 뉴스(My Life News)
+- 배포 링크(Link): [My_Life_News](https://frontend-dev-ec79.up.railway.app/news)
+- 서비스 개발 기간: 2026.01.14 - 2026.03.20
+- 주최: 매경미디어 x Anthropic 공동 주최
+- 성과: 본선 진출 및 수료증 발급 (400대 37 경쟁률)
+
 ![슬라이드1](https://github.com/user-attachments/assets/f8fdba01-27e9-4925-a84d-9772ea53f984)
 ![슬라이드23](https://github.com/user-attachments/assets/5c2fa9ce-aeaf-4b7f-9b52-947f11e99369)
 ![슬라이드3](https://github.com/user-attachments/assets/7c18bae5-c81a-4b4b-a330-def4ae2cbb89)
